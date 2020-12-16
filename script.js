@@ -8,7 +8,14 @@ window.addEventListener('mousemove', function(details){
     let yValue = details.clientY;
     console.log(details);
 
-    circle.style.top = yValue + 'px';
-    circle.style.left = xValue + 'px';
+    setTimeout(function(){
+
+        circle.style.top = yValue + 'px';
+        circle.style.left = xValue + 'px'; 
+
+    },150);
+
     
 })
+
+
